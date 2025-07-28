@@ -1,6 +1,5 @@
 import { Briefcase, Github, ExternalLink } from 'lucide-react';
 import { Card } from '../ui/Card';
-import { Badge } from '../ui/Badge';
 import { AppButton as Button } from '../ui/Button';
 import type { Project } from './portfolioData';
 
@@ -38,12 +37,7 @@ const Projects = ({ projects }: ProjectsProps) => {
                       <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
                         {project.title}
                       </h3>
-                      <Badge
-                        variant={project.status === 'Completed' ? 'default' : 'outline'}
-                        className="text-xs"
-                      >
-                        {project.status || 'Completed'}
-                      </Badge>
+                   
                     </div>
                     <div className="text-sm text-muted-foreground">{project.year || 'N/A'}</div>
                   </div>

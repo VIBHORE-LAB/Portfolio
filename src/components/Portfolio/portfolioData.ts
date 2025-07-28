@@ -37,7 +37,6 @@ export const portfolioData: PortfolioData = {
       ],
       github: "https://github.com/VIBHORE-LAB/Odeon-Server",
       live: "https://odeon-frontend.netlify.app/",
-      status: "Completed",
       year: "2024",
     },
     {
@@ -48,7 +47,6 @@ export const portfolioData: PortfolioData = {
       ],
       github: "https://github.com/VIBHORE-LAB/Buyora-Server",
       live: "https://buyora.netlify.app/",
-      status: "Completed",
       year: "2024",
     },
     {
@@ -58,7 +56,6 @@ export const portfolioData: PortfolioData = {
         "Implemented secure role-based authentication for users and admins via Passport.js, JWT, bcrypt.js, and OAuth.",
       ],
       github: "https://github.com/VIBHORE-LAB/Appointment-Manager",
-      status: "In Progress",
       year: "2024",
     },
     {
@@ -67,7 +64,6 @@ export const portfolioData: PortfolioData = {
         "WebStack Insight is a browser extension that uses AI to inspect and summarize the underlying technologies used in any website — including the tech stack, API calls, frameworks. Powered by Cohere, it provides instant insights in a clean and intuitive UI.",
       ],
       github: "https://github.com/VIBHORE-LAB/WebAnalyzer.Ai",
-      status: "Completed",
       year: "2023",
     },
     {
@@ -76,7 +72,6 @@ export const portfolioData: PortfolioData = {
         "Chrome Extension to convert old aged light mode websites, into a less eye-straining dark themed website.",
       ],
       github: "https://github.com/VIBHORE-LAB/altDee",
-      status: "Completed",
       year: "2023",
     },
   ],
@@ -116,11 +111,11 @@ export const portfolioData: PortfolioData = {
     },
  
   ],
-  socialLinks: [
-    { platform: "GitHub", url: "https://github.com/VIBHORE-LAB", icon: "Github" },
-    { platform: "LinkedIn", url: "https://linkedin.com/in/alex-chen-dev", icon: "Linkedin" },
-    { platform: "Twitter", url: "https://twitter.com/alexchen_dev", icon: "Twitter" },
-  ],
+socialLinks: [
+  { platform: "GitHub", url: "https://github.com/VIBHORE-LAB", icon: "Github" },
+  { platform: "LinkedIn", url: "https://www.linkedin.com/in/vibhore-mathur-1911b1209/", icon: "Linkedin" },
+  { platform: "Twitter/X", url: "https://x.com/Onlyvibhore", icon: "X" },
+],
   contact: {
     email: "onlyvibhore@email.com",
     location: "Jaipur, Rajasthan",

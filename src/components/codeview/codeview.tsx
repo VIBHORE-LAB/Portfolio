@@ -36,7 +36,6 @@ const CodeView = ({ owner, repo, branch = 'main', onToggle }: CodeViewProps) => 
         position: 'relative',
       }}
     >
-      {/* Back Button */}
       {onToggle && (
         <MuiButton
           onClick={onToggle}
@@ -44,7 +43,7 @@ const CodeView = ({ owner, repo, branch = 'main', onToggle }: CodeViewProps) => 
           size="small"
           sx={{
             position: 'absolute',
-            top: 16,
+            top: 18,
             right: 16,
             backgroundColor: '#1f1f1f',
             color: '#fff',
@@ -52,12 +51,11 @@ const CodeView = ({ owner, repo, branch = 'main', onToggle }: CodeViewProps) => 
             textTransform: 'none',
           }}
         >
-          ← Back to Portfolio
+          ← Back to Visuals
         </MuiButton>
       )}
 
       <Box sx={{ display: 'flex', height: '100vh', pt: 2 }}>
-        {/* File Explorer */}
         <Box
           sx={{
             width: 320,
@@ -86,7 +84,6 @@ const CodeView = ({ owner, repo, branch = 'main', onToggle }: CodeViewProps) => 
           </ScrollArea>
         </Box>
 
-        {/* Code Viewer */}
         <Box sx={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
           <CodeHeader selectedFile={selectedFile} />
           <ScrollArea sx={{ flex: 1, px: 2, py: 1 }}>

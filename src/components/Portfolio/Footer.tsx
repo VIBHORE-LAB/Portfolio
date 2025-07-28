@@ -11,7 +11,7 @@ const Footer: React.FC<FooterProps> = ({ socialLinks }) => {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-sm text-muted-foreground">
-            © 2024 Alex Chen. Built with React, TypeScript & Tailwind CSS
+            © 2025 Vibhore Mathur. Built with React, TypeScript & Tailwind CSS
           </div>
 <SocialLinks links={socialLinks} />
         </div>

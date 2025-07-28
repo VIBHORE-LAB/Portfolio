@@ -4,7 +4,7 @@ import {
   Download,
   MapPin,
 } from "lucide-react";
-import { AppButton } from "../ui/Button";
+import Button from "@mui/material/Button";
 import SocialLinks from "./SocialLinks";
 
 interface HeroProps {
@@ -30,8 +30,8 @@ const Hero = ({ contact, socialLinks }: HeroProps) => {
               Available for new opportunities
             </div>
             <h1 className="text-7xl md:text-9xl font-bold tracking-tighter text-foreground relative">
-Vibhore Mathur            
-  <div className="absolute -top-4 -right-4 w-8 h-8 border-2 border-primary rounded-full opacity-50 animate-pulse-slow" />
+              Vibhore Mathur
+              <div className="absolute -top-4 -right-4 w-8 h-8 border-2 border-primary rounded-full opacity-50 animate-pulse-slow" />
             </h1>
             <div className="relative">
               <p className="text-2xl md:text-3xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -54,22 +54,27 @@ Vibhore Mathur
               <MapPin className="h-4 w-4" />
               {contact.location}
             </div>
-      
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <AppButton className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl group">
-              <Mail className="h-4 w-4 mr-2 transition-transform group-hover:scale-110" />
-              Get In Touch
-            </AppButton>
-            <AppButton
-              variant="outlined"
-              className="border-border hover:bg-accent transition-all duration-300 group"
-            >
-              <Download className="h-4 w-4 mr-2 transition-transform group-hover:scale-110" />
-              Download CV
-            </AppButton>
-          </div>
+         <div className="flex flex-col sm:flex-row gap-4 justify-center">
+  <a
+    href={`mailto:${contact.email}`}
+    className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl group px-4 py-2 rounded-md flex items-center"
+  >
+    <Mail className="h-4 w-4 mr-2 transition-transform group-hover:scale-110" />
+    Get In Touch
+  </a>
+
+  <Button
+    href="/Vibhore_Mathur_Resume.pdf"
+    download
+    className="bg-background text-foreground hover:bg-accent transition-all duration-300 shadow-lg hover:shadow-xl group flex items-center px-4 py-2 rounded-md normal-case"
+  >
+    <Download className="h-4 w-4 mr-2 transition-transform group-hover:scale-110" />
+    Download CV
+  </Button>
+</div>
+
 
           <SocialLinks links={socialLinks} />
         </div>
