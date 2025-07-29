@@ -70,7 +70,7 @@ const Portfolio: React.FC = () => {
   <section id="experience" className="relative z-10">
     <Experience experiences={portfolioData.experience} />
   </section>
-  <section id="projects" className="relative z-10">
+  <section id="Projects" className="relative z-10">
     <Projects projects={portfolioData.projects} />
   </section>
   <section id="skills" className="relative z-10">
