@@ -50,7 +50,7 @@ const Portfolio: React.FC = () => {
     style={{ transform: `translateY(${scrollY * 0.1}px)` }}
   />
 
-  <div className="fixed top-6 left-6 z-50">
+  <div className="fixed top-6 left-5 mx-auto">
     <Button
       variant="outlined"
       size="small"
