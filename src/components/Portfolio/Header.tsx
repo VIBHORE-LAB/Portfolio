@@ -1,5 +1,5 @@
 import {
-  Code,
+  
   User,
   Briefcase,
   Award,
