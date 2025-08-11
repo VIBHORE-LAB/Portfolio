@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Code } from 'lucide-react';
-import { AppButton as Button } from '../ui/Button';
 import Header from './Header';
 import Hero from './Hero';
 import About from './About';
@@ -51,15 +49,7 @@ const Portfolio: React.FC = () => {
   />
 
   <div className="fixed top-6 left-5 mx-auto">
-    <Button
-      variant="outlined"
-      size="small"
-      onClick={() => setIsCodeView(true)}
-      className="bg-card/80 backdrop-blur-md border-border hover:bg-accent transition-all duration-300 shadow-lg"
-    >
-      <Code className="h-4 w-4 mr-2" />
-      Code
-    </Button>
+
   </div>
 
   <Header onCodeToggle={() => setIsCodeView(true)} />
