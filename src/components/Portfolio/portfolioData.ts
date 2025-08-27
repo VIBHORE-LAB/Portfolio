@@ -98,16 +98,20 @@ export const portfolioData: PortfolioData = {
       role: "MERN DEVELOPER INTERN ",
       company: "SoftSensor.AI",
       period: "May'2025 - Present",
-      description: ["Contributed to the development of a fleet management solution, working across both frontend and backend using",
-            "Collaborated within an agile team to implement new features, improve performance, and ensure scalability of the platform.",
-            "Refactored legacy code to reduce complexity, enhance maintainability, and align with current development standards."
-      ],
+      description: ["Contributed to the development of a fleet management solution, working across both frontend and backend.",
+            "Engineered a centralized MQTT alert system delivering 1,000+ cross-app notifications per week, improving cross-application communication.",
+            "Developed a centralized Data Transfer Object (DTO) architecture to unify 30+ back-end routes from mutable responses, eliminating response inconsistencies and reducing client-side defects.",
+            "Partnered with cross-functional team members in an agile environment to design and implement scalable full-stack modules, ensuring robustness and long-term maintainability."
+          ],
     },
     {
-      role: "Full Stack Developer",
+      role: "WEB DEVELOPER INTERN",
       company: "Anuin Techlogix",
       period: "July'2024 - September'2024",
-      description: ["Worked on frontend of Restaurant Management System using React-Redux, MUI and tailwind CSS.","Built and integrated dynamic frontend components for managing orders,menus, and reservations"] 
+      description: ["Developed dynamic order/reservation dashboard in React-Redux, enabling staff to process 100+ daily orders.",
+        "Integrated REST APIs for menu and order workflows, ensuring a seamless experience across mobile and desktop platforms for employees.",
+        "Engineered performance optimizations through code-splitting, lazy loading, and improved state management, reducing page load times by 25% and enhancing user interactions."
+      ] 
     },
  
   ],

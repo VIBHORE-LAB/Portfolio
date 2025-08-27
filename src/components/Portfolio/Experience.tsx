@@ -1,5 +1,5 @@
 import { Briefcase } from "lucide-react";
-import {Badge} from "../ui/Badge";
+import { Badge } from "../ui/Badge";
 import { Card } from "../ui/Card";
 import type { Experience as ExperienceType } from '../Portfolio/portfolioData';
 
@@ -21,9 +21,13 @@ const Experience = ({ experiences }: ExperienceProps) => {
             Building innovative solutions across different companies and industries
           </p>
         </div>
+
         <div className="space-y-8">
           {experiences.map((exp, index) => (
-            <Card key={index} className="p-8 bg-gradient-card border-border hover:shadow-lg transition-all duration-300 group animate-scale-in">
+            <Card
+              key={index}
+              className="p-8 bg-gradient-card border-border hover:shadow-lg transition-all duration-300 group animate-scale-in"
+            >
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div className="space-y-2">
                   <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
@@ -35,10 +39,15 @@ const Experience = ({ experiences }: ExperienceProps) => {
                   </div>
                 </div>
                 <Badge variant="outline" className="w-fit border-border">
-                  {exp.period.split(' - ')[1] === 'Present' ? 'Current' : 'Completed'}
+                  {exp.period.split(" - ")[1] === "Present" ? "Current" : "Completed"}
                 </Badge>
               </div>
-              <p className="mt-4 text-muted-foreground">{exp.description}</p>
+
+              <div className="mt-4 text-muted-foreground space-y-2"> 
+                {exp.description.map((line, i) => (
+                  <p key={i}>{line}</p>
+                ))}
+              </div>
             </Card>
           ))}
         </div>
