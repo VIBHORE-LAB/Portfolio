@@ -6,6 +6,7 @@ export interface Project {
   live?: string;
   status?: string;
   year?: string;
+  screenshot?: string[];
 }
 export interface Experience {
   role: string;
@@ -21,6 +22,7 @@ export interface PortfolioData {
   experience: Experience[];
   socialLinks: { platform: string; url: string; icon: string }[];
   contact: { email: string; location: string };
+  
 }
 
 
@@ -37,7 +39,8 @@ export const portfolioData: PortfolioData = {
       ],
       github: "https://github.com/VIBHORE-LAB/Odeon-Server",
       live: "https://odeon-frontend.netlify.app/",
-      year: "2024",
+      year: "2025",
+      screenshot:["/images/Odeon.png", "/images/Odeon2.png"],
     },
     {
       title: "Buyora",
@@ -47,7 +50,8 @@ export const portfolioData: PortfolioData = {
       ],
       github: "https://github.com/VIBHORE-LAB/Buyora-Server",
       live: "https://buyora.netlify.app/",
-      year: "2024",
+      year: "2025",
+      screenshot:["/images/Buyora.png","/images/Buyora2.png", "/images/Buyora3.png", "/images/Buyora4.png", "/images/Buyora5.png"],
     },
     {
       title: "Appointment Manager",
@@ -56,7 +60,8 @@ export const portfolioData: PortfolioData = {
         "Implemented secure role-based authentication for users and admins via Passport.js, JWT, bcrypt.js, and OAuth.",
       ],
       github: "https://github.com/VIBHORE-LAB/Appointment-Manager",
-      year: "2024",
+      year: "2025",
+      screenshot:["/images/Appointment1.png", "/images/Appointment2.png", "/images/Appointment3.png"]
     },
     {
       title: "WebAnalyzer.AI",
@@ -64,7 +69,8 @@ export const portfolioData: PortfolioData = {
         "WebStack Insight is a browser extension that uses AI to inspect and summarize the underlying technologies used in any website — including the tech stack, API calls, frameworks. Powered by Cohere, it provides instant insights in a clean and intuitive UI.",
       ],
       github: "https://github.com/VIBHORE-LAB/WebAnalyzer.Ai",
-      year: "2023",
+      year: "2025",
+      screenshot:["/images/WebAnalyzer1.png", "/images/WebAnalyzer2.png"]
     },
     {
       title: "AltDee",
@@ -72,7 +78,8 @@ export const portfolioData: PortfolioData = {
         "Chrome Extension to convert old aged light mode websites, into a less eye-straining dark themed website.",
       ],
       github: "https://github.com/VIBHORE-LAB/altDee",
-      year: "2023",
+      year: "2025",
+      screenshot:["/images/AltD.png"]
     },
   ],
   skills: [
@@ -95,9 +102,9 @@ export const portfolioData: PortfolioData = {
   ],
   experience: [
     {
-      role: "MERN DEVELOPER INTERN ",
+      role: "MERN DEVELOPER INTERN (Offered PPO) ",
       company: "SoftSensor.AI",
-      period: "May'2025 - Present",
+      period: "May'2025 - August'2028",
       description: ["Contributed to the development of a fleet management solution, working across both frontend and backend.",
             "Engineered a centralized MQTT alert system delivering 1,000+ cross-app notifications per week, improving cross-application communication.",
             "Developed a centralized Data Transfer Object (DTO) architecture to unify 30+ back-end routes from mutable responses, eliminating response inconsistencies and reducing client-side defects.",
