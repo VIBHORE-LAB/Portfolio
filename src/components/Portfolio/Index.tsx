@@ -24,12 +24,12 @@ const Portfolio: React.FC<PortfolioProps> = ({ onCodeToggle }) => {
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
-      <div className="fixed inset-0 opacity-30 z-[-1]">
-        <div className="absolute top-20 left-10 w-32 h-32 border border-border rounded-full animate-pulse-slow" />
-        <div className="absolute top-40 right-20 w-24 h-24 border border-border rotate-45 animate-float" />
-        <div className="absolute bottom-40 left-20 w-20 h-20 border border-border rounded-full animate-pulse-slow" />
-        <div className="absolute bottom-20 right-40 w-28 h-28 border border-border rotate-12 animate-float" />
-      </div>
+     <div className="fixed inset-0 opacity-30 z-[-1] hidden sm:block">
+  <div className="absolute top-20 left-10 w-32 h-32 border border-border rounded-full animate-pulse-slow" />
+  <div className="absolute top-40 right-20 w-24 h-24 border border-border rotate-45 animate-float" />
+  <div className="absolute bottom-40 left-20 w-20 h-20 border border-border rounded-full animate-pulse-slow" />
+  <div className="absolute bottom-20 right-40 w-28 h-28 border border-border rotate-12 animate-float" />
+</div>
 
       <div
         className="fixed inset-0 bg-grid-pattern bg-grid opacity-20 z-[-1]"
