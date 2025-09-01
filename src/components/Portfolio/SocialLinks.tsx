@@ -11,7 +11,6 @@ interface SocialLinksProps {
   links: SocialLink[];
 }
 
-// Custom X (Twitter) icon as component
 const XIcon = ({ className }: { className: string }) => (
   <svg
     className={className}
@@ -31,7 +30,7 @@ const SocialLinks = ({ links }: SocialLinksProps) => {
   };
 
   return (
-    <div className="flex items-center justify-center gap-4 pt-8">
+    <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 pt-6 sm:pt-8">
       {links.map((link) => {
         const Icon = iconMap[link.icon.toLowerCase()];
         if (!Icon) return null;
@@ -47,7 +46,7 @@ const SocialLinks = ({ links }: SocialLinksProps) => {
             rel="noopener noreferrer"
             sx={{
               minWidth: 0,
-              padding: "8px",
+              padding: "6px",
               borderRadius: "9999px",
               color: "#555",
               transition: "all 0.3s ease",
@@ -57,7 +56,7 @@ const SocialLinks = ({ links }: SocialLinksProps) => {
               },
             }}
           >
-            <Icon className="h-5 w-5" />
+            <Icon className="h-4 w-4 sm:h-5 sm:w-5" />
           </Button>
         );
       })}

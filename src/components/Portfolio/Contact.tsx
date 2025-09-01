@@ -1,7 +1,7 @@
-import { Card } from '../ui/Card';
-import { AppButton as Button } from '../ui/Button';
-import { Mail, MessageSquare, Github, Linkedin } from 'lucide-react';
-import type { PortfolioData } from './portfolioData';
+import { Card } from "../ui/Card";
+import { AppButton as Button } from "../ui/Button";
+import { Mail, MessageSquare, Github, Linkedin } from "lucide-react";
+import type { PortfolioData } from "./portfolioData";
 
 const X = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -15,50 +15,58 @@ const X = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 interface ContactProps {
-  contact: PortfolioData['contact'];
-  socialLinks: PortfolioData['socialLinks'];
+  contact: PortfolioData["contact"];
+  socialLinks: PortfolioData["socialLinks"];
 }
 
 const Contact: React.FC<ContactProps> = ({ contact, socialLinks }) => {
   return (
-    <section className="py-32 px-6 relative z-20">
+    <section className="py-16 px-4 sm:py-24 sm:px-6 lg:py-32 lg:px-8 relative z-20">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center space-y-8 animate-fade-in">
-          <div className="space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-muted/50 rounded-full text-sm text-muted-foreground">
+        <div className="text-center space-y-6 sm:space-y-8 animate-fade-in">
+          {/* Heading */}
+          <div className="space-y-3 sm:space-y-4">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-muted/50 rounded-full text-xs sm:text-sm text-muted-foreground">
               <MessageSquare className="h-4 w-4" />
               Get In Touch
             </div>
-            <h2 className="text-5xl font-bold text-foreground">Let's Work Together</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
+              Let&apos;s Work Together
+            </h2>
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               I'm always interested in new opportunities and exciting projects.
-              Let's connect and discuss how we can bring your ideas to life.
+              Let&apos;s connect and discuss how we can bring your ideas to life.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          {/* Contact Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto">
+            {/* Email Card */}
             <a
               href={`mailto:${contact.email}`}
               className="no-underline block pointer-events-auto"
             >
-              <Card className="p-6 bg-gradient-card border-border transition-all duration-300 group flex flex-col justify-center items-center text-center h-[220px] w-full max-w-xs transform hover:shadow-3xl hover:bg-accent/10 cursor-pointer">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto group-hover:bg-primary/20 transition-colors mb-4">
-                  <Mail className="h-6 w-6 text-primary  group-hover:text-primary/80 transition-transform" />
+              <Card className="p-6 sm:p-8 bg-gradient-card border-border transition-all duration-300 group flex flex-col justify-center items-center text-center h-[200px] sm:h-[220px] w-full max-w-xs mx-auto transform hover:shadow-2xl hover:bg-accent/10 cursor-pointer">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <Mail className="h-6 w-6 text-primary group-hover:text-primary/80 transition-transform" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                  <p className="text-sm text-muted-foreground">{contact.email}</p>
+                  <p className="text-sm text-muted-foreground truncate">
+                    {contact.email}
+                  </p>
                 </div>
               </Card>
             </a>
 
+            {/* Social Links */}
             {socialLinks.map((link) => {
               const IconComponent =
-                link.icon === 'Github'
+                link.icon === "Github"
                   ? Github
-                  : link.icon === 'Linkedin'
+                  : link.icon === "Linkedin"
                   ? Linkedin
-                  : link.icon === 'X'
+                  : link.icon === "X"
                   ? X
                   : null;
 
@@ -70,14 +78,16 @@ const Contact: React.FC<ContactProps> = ({ contact, socialLinks }) => {
                   rel="noopener noreferrer"
                   className="no-underline block pointer-events-auto"
                 >
-                  <Card className="p-6 bg-gradient-card border-border transition-all duration-300 group flex flex-col justify-center items-center text-center h-[220px] w-full max-w-xs transform  hover:shadow-2xl hover:bg-accent/10 cursor-pointer">
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto group-hover:bg-primary/20 transition-colors mb-4">
+                  <Card className="p-6 sm:p-8 bg-gradient-card border-border transition-all duration-300 group flex flex-col justify-center items-center text-center h-[200px] sm:h-[220px] w-full max-w-xs mx-auto transform hover:shadow-2xl hover:bg-accent/10 cursor-pointer">
+                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                       {IconComponent && (
-                        <IconComponent className="h-6 w-6 text-primary group-hover:text-primary/80  transition-transform" />
+                        <IconComponent className="h-6 w-6 text-primary group-hover:text-primary/80 transition-transform" />
                       )}
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground">{link.platform}</h3>
+                      <h3 className="font-semibold text-foreground text-sm sm:text-base">
+                        {link.platform}
+                      </h3>
                     </div>
                   </Card>
                 </a>
@@ -85,12 +95,13 @@ const Contact: React.FC<ContactProps> = ({ contact, socialLinks }) => {
             })}
           </div>
 
+          {/* Button */}
           <a
             href={`mailto:${contact.email}`}
             className="no-underline block pointer-events-auto"
           >
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl px-8 py-4 text-lg group flex items-center justify-center mx-auto mt-12 max-w-xs transform">
-              <Mail className="h-5 w-5 mr-3 transition-transform " />
+            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg group flex items-center justify-center mx-auto mt-8 sm:mt-12 max-w-xs transform">
+              <Mail className="h-5 w-5 mr-2 sm:mr-3 transition-transform" />
               Start a Conversation
             </Button>
           </a>

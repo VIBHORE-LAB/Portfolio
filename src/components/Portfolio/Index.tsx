@@ -24,7 +24,6 @@ const Portfolio: React.FC<PortfolioProps> = ({ onCodeToggle }) => {
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
-      {/* Background decorative elements */}
       <div className="fixed inset-0 opacity-30 z-[-1]">
         <div className="absolute top-20 left-10 w-32 h-32 border border-border rounded-full animate-pulse-slow" />
         <div className="absolute top-40 right-20 w-24 h-24 border border-border rotate-45 animate-float" />
