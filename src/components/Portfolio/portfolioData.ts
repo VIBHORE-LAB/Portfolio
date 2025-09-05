@@ -104,7 +104,7 @@ export const portfolioData: PortfolioData = {
     {
       role: "MERN DEVELOPER INTERN (Offered PPO) ",
       company: "SoftSensor.AI",
-      period: "May'2025 - August'2028",
+      period: "May'2025 - August'2025",
       description: ["Contributed to the development of a fleet management solution, working across both frontend and backend.",
             "Engineered a centralized MQTT alert system delivering 1,000+ cross-app notifications per week, improving cross-application communication.",
             "Developed a centralized Data Transfer Object (DTO) architecture to unify 30+ back-end routes from mutable responses, eliminating response inconsistencies and reducing client-side defects.",
