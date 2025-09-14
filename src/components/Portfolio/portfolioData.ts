@@ -32,6 +32,19 @@ export interface PortfolioData {
 export const portfolioData: PortfolioData = {
   projects: [
     {
+      title: "Stratify",
+    description: [
+  "Full-stack trading strategy backtester built with C++ computation engine, React (TypeScript), Node.js, Express, PostgreSQL, Socket.io, Recharts, and JWT authentication.",
+  "Developed and integrated multiple strategies (Bollinger Bands, Mean Reversion, Momentum, etc.) to support configurable backtests.",
+  "Implemented equity curve visualizations, real-time trade updates, drawdown analysis, and interactive dashboards with performance metrics and position tracking.",
+],
+
+      github: "https://github.com/VIBHORE-LAB/stratify-backend",
+      live: "https://stratifyy.netlify.app/",
+      year: "2025",
+      screenshot:["/images/Stratify1.png", "/images/Stratify2.png", "/images/Stratify3.png"],
+    },
+    {
       title: "Odeon",
       description: [
         "Full-stack Spotify analytics platform using React (TypeScript), Node.js, Apollo GraphQL, and LowDB.",
@@ -102,7 +115,7 @@ export const portfolioData: PortfolioData = {
   ],
   experience: [
     {
-      role: "MERN DEVELOPER INTERN (Offered PPO) ",
+      role: "MERN DEVELOPER INTERN",
       company: "SoftSensor.AI",
       period: "May'2025 - August'2028",
       description: ["Contributed to the development of a fleet management solution, working across both frontend and backend.",
