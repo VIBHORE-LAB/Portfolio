@@ -31,6 +31,23 @@ export interface PortfolioData {
 
 export const portfolioData: PortfolioData = {
   projects: [
+
+    {
+      title: "Email RAG Pipeline",
+description: [
+  "Developed a full-stack Retrieval-Augmented Generation (RAG) pipeline for real-time email classification and AI-assisted responses, with automated Slack notifications.",
+  "Engineered with Node.js (TypeScript), GraphQL, MongoDB, Elasticsearch, Qdrant, Docker, and React (TypeScript).",
+  "Implemented IMAP synchronization and intelligent email parsing, storing vector embeddings in Qdrant and indexing metadata in Elasticsearch.",
+  "Integrated OpenAI APIs for zero-shot classification and context-aware AI-generated replies.",
+],
+      github: "https://github.com/VIBHORE-LAB/reachinbox-backend",
+      live: "https://elaborate-dusk-b92b23.netlify.app/",
+      year: "2025",
+      screenshot: ["/images/Email-Rag-Pipeline1.png", "/images/Email-Rag-Pipeline2.png"]
+    },
+
+
+    
     {
       title: "Stratify",
     description: [
