@@ -59,18 +59,18 @@ const Projects = ({ projects }: ProjectsProps) => {
             return (
               <Card
                 key={projectIndex}
-                className="group p-8 bg-gradient-card border-border hover:shadow-xl transition-all duration-500 animate-scale-in relative overflow-hidden"
+                className="group p-8 bg-gradient-card border-border hover:shadow-xl transition-all duration-500 animate-scale-in relative overflow-hidden flex flex-col h-full"
                 style={{ animationDelay: `${projectIndex * 0.2}s` }}
               >
-                <div className="relative space-y-6">
+                <div className="relative flex flex-col flex-1 space-y-6">
                   <div className="flex items-start justify-between">
-                    <div className="space-y-2 relative">
+                    <div className="space-y-2 relative w-full">
                       {images.length > 0 && (
-                        <div className="relative">
+                        <div className="relative w-full">
                           <img
                             src={images[currentThumb]}
                             alt={project.title}
-                            className="cursor-pointer rounded-lg hover:opacity-90 transition"
+                            className="cursor-pointer rounded-lg hover:opacity-90 transition w-full"
                             onClick={() => setOpenGallery({ images, index: currentThumb })}
                           />
                           {/* Thumbnail chevrons */}
@@ -99,7 +99,7 @@ const Projects = ({ projects }: ProjectsProps) => {
                         </div>
                       )}
 
-                      <div className="flex items-center gap-3">
+                      <div className="flex items-center gap-3 pt-2">
                         <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
                           {project.title}
                         </h3>
@@ -110,13 +110,13 @@ const Projects = ({ projects }: ProjectsProps) => {
                     </div>
                   </div>
 
-                  <div className="text-muted-foreground leading-relaxed space-y-2">
+                  <ul className="list-disc pl-5 text-muted-foreground leading-relaxed space-y-2">
                     {project.description.map((desc, i) => (
-                      <p key={i}>{desc}</p>
+                      <li key={i}>{desc}</li>
                     ))}
-                  </div>
+                  </ul>
 
-                  <div className="flex gap-3 pt-4">
+                  <div className="flex gap-3 pt-4 mt-auto">
                     <Button
                       variant="outlined"
                       size="small"

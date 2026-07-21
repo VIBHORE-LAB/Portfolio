@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import { useLenis } from "./hooks/useLenis";
 import Portfolio from "./components/Portfolio/Index";
 import CodeView from "./components/codeview/codeview";
 
 function App() {
+  useLenis();
   const [isCodeView, setIsCodeView] = useState<boolean | null>(null);
 
   useEffect(() => {

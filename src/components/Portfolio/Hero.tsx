@@ -1,11 +1,10 @@
-import { ArrowDown, Mail, Download, MapPin } from "lucide-react";
+import { ArrowDown, Mail, Download } from "lucide-react";
 import Button from "@mui/material/Button";
 import SocialLinks from "./SocialLinks";
 
 interface HeroProps {
   contact: {
     email: string;
-    location: string;
   };
   socialLinks: {
     platform: string;
@@ -49,13 +48,7 @@ const Hero = ({ contact, socialLinks }: HeroProps) => {
           </div>
         </div>
 
-        {/* Location */}
-        <div className="flex items-center justify-center gap-4 text-xs sm:text-sm md:text-base text-muted-foreground">
-          <div className="flex items-center gap-1 sm:gap-2">
-            <MapPin className="h-4 w-4 sm:h-5 sm:w-5" />
-            {contact.location}
-          </div>
-        </div>
+
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
@@ -68,7 +61,7 @@ const Hero = ({ contact, socialLinks }: HeroProps) => {
           </a>
 
           <Button
-            href="/Vibhore_Mathur_Resume.pdf"
+            href="/VIBHORE_MATHUR_RESUME.pdf"
             download
             className="bg-background text-foreground hover:bg-accent transition-all duration-300 shadow-lg hover:shadow-xl group flex items-center justify-center px-4 sm:px-6 py-2 sm:py-3 rounded-md normal-case text-sm sm:text-base"
           >

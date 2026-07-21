@@ -54,11 +54,25 @@ const Experience = ({ experiences }: ExperienceProps) => {
               </div>
 
               {/* Description */}
-              <div className="mt-3 sm:mt-4 text-muted-foreground space-y-1.5 sm:space-y-2 text-sm sm:text-base leading-relaxed">
+              <ul className="list-disc pl-5 mt-3 sm:mt-4 text-muted-foreground space-y-1.5 sm:space-y-2 text-sm sm:text-base leading-relaxed">
                 {exp.description.map((line, i) => (
-                  <p key={i}>{line}</p>
+                  <li key={i}>{line}</li>
                 ))}
-              </div>
+              </ul>
+
+              {/* Tech Stack */}
+              {exp.tech && (
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {exp.tech.split(" · ").map((t) => (
+                    <span
+                      key={t}
+                      className="px-2.5 py-0.5 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              )}
             </Card>
           ))}
         </div>

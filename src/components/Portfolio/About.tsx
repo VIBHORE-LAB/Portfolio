@@ -14,27 +14,19 @@ const About = () => {
                 About Me
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-snug">
-                A little bit of me <br />
+                Building with Purpose, <br />
                 <span className="text-muted-foreground">
-                  for the starters...
+                  Designing with Precision
                 </span>
               </h2>
             </div>
 
             <div className="space-y-4 sm:space-y-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
               <p>
-                I build things for the web — sometimes for fun, sometimes for
-                work, always with intention. I’m a full stack developer who
-                cares about clean design, logic and smooth user experiences, and
-                writing code that doesn’t make me cringe later (though sometimes
-                it does). Whether it’s a slick UI or a solid backend, I like
-                shipping stuff that feels good to use.
+                I am a Full Stack Developer with over a year of professional experience building, scaling, and optimizing web applications. I specialize in the MERN stack, TypeScript, and modern system architectures, designing end-to-end solutions that balance complex backend logic with smooth, responsive interfaces.
               </p>
               <p>
-                When I’m not coding, you’ll probably find me doing absolutely
-                nothing — unless I’m deep into some obscure history article,
-                lost in a weird internet rabbit hole, or just enjoying a good
-                cricket match and pretending it counts as exercise.
+                My approach centers on writing clean, maintainable code and solving real-world challenges—whether it's optimizing search indexing, architecting zero-shot AI classification pipelines, or building performant developer tools. I thrive in agile environments where I can translate product requirements into polished, production-ready systems.
               </p>
             </div>
           </div>
@@ -52,32 +44,32 @@ const About = () => {
               {/* Code Block */}
               <div className="mt-6 sm:mt-8 font-mono text-xs sm:text-sm overflow-x-auto">
                 <div className="text-code-comment">
-                  // My approach to development
+                  // Core engineering profile
                 </div>
                 <div className="mt-2">
                   <span className="text-code-keyword">const</span>{" "}
-                  <span className="text-code-foreground">developer</span> = {"{"}
+                  <span className="text-code-foreground">engineer</span> = {"{"}
                 </div>
                 <div className="ml-4 space-y-1">
                   <div>
-                    <span className="text-code-string">"write_code"</span>:{" "}
-                    <span className="text-code-keyword">true</span>,
+                    <span className="text-code-string">"experience"</span>:{" "}
+                    <span className="text-code-string">"1+ Years"</span>,
                   </div>
                   <div>
-                    <span className="text-code-string">"debug_code"</span>:{" "}
-                    <span className="text-code-keyword">true</span>,
+                    <span className="text-code-string">"specialties"</span>:{" "}
+                    {"["}
+                    <span className="text-code-string">"Full Stack"</span>,{" "}
+                    <span className="text-code-string">"API Design"</span>,{" "}
+                    <span className="text-code-string">"Performance Optimization"</span>
+                    {"]"},
                   </div>
                   <div>
-                    <span className="text-code-string">
-                      "curious_mindset"
-                    </span>
-                    : <span className="text-code-keyword">true</span>,
+                    <span className="text-code-string">"philosophy"</span>:{" "}
+                    <span className="text-code-string">"Clean code & robust architecture"</span>,
                   </div>
                   <div>
-                    <span className="text-code-string">
-                      "breathe_and_blink"
-                    </span>
-                    : <span className="text-code-keyword">true</span>
+                    <span className="text-code-string">"focus"</span>:{" "}
+                    <span className="text-code-string">"Scalable applications & developer tooling"</span>
                   </div>
                 </div>
                 <div>{"};"}</div>
