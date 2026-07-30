@@ -33,6 +33,19 @@ export interface PortfolioData {
 export const portfolioData: PortfolioData = {
   projects: [
     {
+      title: "CineEncode",
+      description: [
+        "Architected a distributed, content-aware video transcoding platform using Node.js (TypeScript), Express, and Sequelize ORM.",
+        "Engineered an automated video splitting engine with FFmpeg visual change filters to segment high-resolution media into logical scenes based on threshold-based scene transition detection.",
+        "Integrated Groq AI (Llama-3-70B) to analyze scene frame complexity and dynamically predict optimal Constant Rate Factor (CRF) values, yielding up to 40% compression improvements with zero perceived quality loss.",
+        "Built a resilient asynchronous task system using BullMQ with Redis enqueuing, utilizing a Kafka message bus for high-frequency progress event processing and Socket.io WebSockets to broadcast frame-by-frame updates to the client.",
+        "Created an intuitive frontend monitoring dashboard in React, TypeScript, and Tailwind CSS, featuring live progress bars, detailed scene breakdowns, and direct output download links."
+      ],
+      github: "https://github.com/VIBHORE-LAB/cine-encode",
+      year: "2026",
+      screenshot: ["/images/cineencode1.png"]
+    },
+    {
       title: "CSV SQL Parser",
       description: [
         "Developed a Terminal User Interface (TUI) based CSV to SQL compiler and query executor in Python.",
@@ -148,12 +161,14 @@ export const portfolioData: PortfolioData = {
       period: "October 2025 - Present",
       description: [
         "Engineered and maintained full-stack features across the Zapmail SaaS platform spanning deliverability pipelines, domain management, user and workspace management, automation workflows, and system reliability.",
+        "Architected and deployed an end-to-end Model Context Protocol (MCP) integration, establishing a secure OAuth 2.0 authentication architecture and a granular user-consent provider framework to enforce human-in-the-loop validation for a comprehensive tool suite.",
+
         "Built a proactive domain health monitoring engine that automated DNS reputation tracking and real-time blacklist detection, eliminating pre-deployment configuration failures and improving email deliverability reliability.",
         "Designed and shipped a centralized async job processing system using BullMQ and Redis with rate-limit-aware exponential backoff strategies, reducing job failure rates by 40%.",
         "Developed a high-throughput webhook event delivery system processing 15,000+ events per day, implementing HMAC-based payload verification, idempotency controls, and configurable retry logic.",
         "Spearheaded the end-to-end engineering of a major full-product redesign, architecting and delivering multiple critical user flows, improving onboarding completion rates and platform retention.",
       ],
-      tech: "React · TypeScript · Node.js · BullMQ · Redis · PostgreSQL · REST APIs",
+      tech: "React · TypeScript · Node.js · BullMQ · Redis · PostgreSQL · REST APIs · MCP · OAuth 2.0",
     },
     {
       role: "Full Stack Developer Intern",
