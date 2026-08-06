@@ -1,0 +1,31 @@
+# Allow all crawlers and AI bots
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://vibhore.site/sitemap.xml
+
+# Allow AI-specific crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /

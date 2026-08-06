@@ -1,0 +1,126 @@
+{
+  "name": "Vibhore Mathur",
+  "title": "Full Stack Developer",
+  "tagline": "Full Stack Developer crafting digital experiences with clean code and modern design",
+  "about": "Full Stack Developer with 1+ years of professional experience building, scaling, and optimizing web applications. Specializes in the MERN stack, TypeScript, and modern system architectures, designing end-to-end solutions that balance complex backend logic with smooth, responsive interfaces.",
+  "contact": {
+    "email": "onlyvibhore@email.com"
+  },
+  "socialLinks": {
+    "github": "https://github.com/VIBHORE-LAB",
+    "linkedin": "https://www.linkedin.com/in/vibhore-mathur-1911b1209/",
+    "twitter": "https://x.com/Onlyvibhore"
+  },
+  "skills": [
+    "JavaScript", "TypeScript", "React", "Node.js", "Python", "Flask",
+    "GraphQL", "MongoDB", "PostgreSQL", "Tailwind CSS", "Redux",
+    "Passport.js", "JWT", "Docker", "AWS", "Git"
+  ],
+  "experience": [
+    {
+      "role": "Software Developer 1",
+      "company": "Outbox Labs",
+      "period": "October 2025 - Present",
+      "highlights": [
+        "Full-stack features across Zapmail SaaS platform",
+        "End-to-end MCP integration with OAuth 2.0",
+        "Domain health monitoring engine",
+        "Centralized async job processing (BullMQ/Redis) — 40% fewer failures",
+        "Webhook event delivery: 15,000+ events/day",
+        "Led major full-product redesign"
+      ],
+      "tech": ["React", "TypeScript", "Node.js", "BullMQ", "Redis", "PostgreSQL", "MCP", "OAuth 2.0"]
+    },
+    {
+      "role": "Full Stack Developer Intern",
+      "company": "SoftSensor.AI",
+      "period": "May 2025 - August 2025",
+      "highlights": [
+        "Fleet management SaaS platform",
+        "MQTT-based alert system: 1,000+ alerts/week",
+        "DTO architecture across 30+ API routes"
+      ],
+      "tech": ["React", "Node.js", "TypeScript", "MQTT", "MongoDB"]
+    },
+    {
+      "role": "Frontend Developer Intern",
+      "company": "Anuin Techlogix",
+      "period": "July 2024 - September 2024",
+      "highlights": [
+        "Order/reservation management dashboard: 100+ daily orders",
+        "RESTful API integration for cross-platform experience",
+        "Performance optimization: 25% faster page loads"
+      ],
+      "tech": ["React", "Redux", "JavaScript", "REST APIs", "CSS"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "CineEncode",
+      "year": 2026,
+      "description": "Distributed, content-aware video transcoding platform with AI-powered scene analysis and dynamic CRF prediction",
+      "tech": ["Node.js", "TypeScript", "FFmpeg", "Groq AI", "BullMQ", "Redis", "Kafka", "React"],
+      "github": "https://github.com/VIBHORE-LAB/cine-encode"
+    },
+    {
+      "name": "CSV SQL Parser",
+      "year": 2025,
+      "description": "TUI-based CSV to SQL compiler with custom lexer, parser, AST, query planner, and executor",
+      "tech": ["Python", "Textual", "Rich"],
+      "github": "https://github.com/VIBHORE-LAB/csv-sql-parser"
+    },
+    {
+      "name": "Email RAG Pipeline",
+      "year": 2025,
+      "description": "Full-stack RAG pipeline for email classification and AI-assisted responses",
+      "tech": ["Node.js", "TypeScript", "GraphQL", "MongoDB", "Elasticsearch", "Qdrant", "Docker", "React", "OpenAI"],
+      "github": "https://github.com/VIBHORE-LAB/reachinbox-backend",
+      "live": "https://elaborate-dusk-b92b23.netlify.app/"
+    },
+    {
+      "name": "Stratify",
+      "year": 2025,
+      "description": "Full-stack trading strategy backtester with C++ computation engine",
+      "tech": ["C++", "React", "TypeScript", "Node.js", "PostgreSQL", "Socket.io"],
+      "github": "https://github.com/VIBHORE-LAB/stratify-backend",
+      "live": "https://stratifyy.netlify.app/"
+    },
+    {
+      "name": "Odeon",
+      "year": 2025,
+      "description": "Full-stack Spotify analytics platform with personalized dashboards",
+      "tech": ["React", "TypeScript", "Node.js", "Apollo GraphQL", "LowDB"],
+      "github": "https://github.com/VIBHORE-LAB/Odeon-Server",
+      "live": "https://odeon-frontend.netlify.app/"
+    },
+    {
+      "name": "Buyora",
+      "year": 2025,
+      "description": "Full-stack e-commerce platform with customer and seller roles",
+      "tech": ["Flask", "React", "Redux-Saga"],
+      "github": "https://github.com/VIBHORE-LAB/Buyora-Server",
+      "live": "https://buyora.netlify.app/"
+    },
+    {
+      "name": "Appointment Manager",
+      "year": 2025,
+      "description": "MERN stack appointment management platform with role-based auth",
+      "tech": ["MongoDB", "Express", "React", "Node.js", "Passport.js", "JWT"],
+      "github": "https://github.com/VIBHORE-LAB/Appointment-Manager"
+    },
+    {
+      "name": "WebAnalyzer.AI",
+      "year": 2025,
+      "description": "AI-powered browser extension for website tech stack analysis",
+      "tech": ["Browser Extension", "Cohere AI"],
+      "github": "https://github.com/VIBHORE-LAB/WebAnalyzer.Ai"
+    },
+    {
+      "name": "AltDee",
+      "year": 2025,
+      "description": "Chrome extension for converting websites to dark mode",
+      "tech": ["Chrome Extension", "JavaScript"],
+      "github": "https://github.com/VIBHORE-LAB/altDee"
+    }
+  ]
+}

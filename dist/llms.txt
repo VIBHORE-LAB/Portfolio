@@ -1,0 +1,85 @@
+# Vibhore Mathur — Full Stack Developer Portfolio
+
+> Full Stack Developer with 1+ years of professional experience building, scaling, and optimizing web applications. Specializes in the MERN stack, TypeScript, and modern system architectures.
+
+## About
+
+Vibhore Mathur is a Full Stack Developer crafting digital experiences with clean code and modern design. He has professional experience at Outbox Labs (Software Developer 1), SoftSensor.AI (Full Stack Developer Intern), and Anuin Techlogix (Frontend Developer Intern).
+
+His approach centers on writing clean, maintainable code and solving real-world challenges — whether it's optimizing search indexing, architecting zero-shot AI classification pipelines, or building performant developer tools.
+
+## Contact
+
+- Email: onlyvibhore@email.com
+- GitHub: https://github.com/VIBHORE-LAB
+- LinkedIn: https://www.linkedin.com/in/vibhore-mathur-1911b1209/
+- Twitter/X: https://x.com/Onlyvibhore
+
+## Skills
+
+JavaScript, TypeScript, React, Node.js, Python, Flask, GraphQL, MongoDB, PostgreSQL, Tailwind CSS, Redux, Passport.js, JWT, Docker, AWS, Git
+
+## Professional Experience
+
+### Software Developer 1 — Outbox Labs (October 2025 – Present)
+- Engineered and maintained full-stack features across the Zapmail SaaS platform spanning deliverability pipelines, domain management, user and workspace management, automation workflows, and system reliability.
+- Architected and deployed an end-to-end Model Context Protocol (MCP) integration, establishing a secure OAuth 2.0 authentication architecture and a granular user-consent provider framework to enforce human-in-the-loop validation for a comprehensive tool suite.
+- Built a proactive domain health monitoring engine that automated DNS reputation tracking and real-time blacklist detection, eliminating pre-deployment configuration failures and improving email deliverability reliability.
+- Designed and shipped a centralized async job processing system using BullMQ and Redis with rate-limit-aware exponential backoff strategies, reducing job failure rates by 40%.
+- Developed a high-throughput webhook event delivery system processing 15,000+ events per day, implementing HMAC-based payload verification, idempotency controls, and configurable retry logic.
+- Spearheaded the end-to-end engineering of a major full-product redesign, architecting and delivering multiple critical user flows, improving onboarding completion rates and platform retention.
+- Tech: React, TypeScript, Node.js, BullMQ, Redis, PostgreSQL, REST APIs, MCP, OAuth 2.0
+
+### Full Stack Developer Intern — SoftSensor.AI (May 2025 – August 2025)
+- Built and maintained scalable frontend and backend features for a fleet management SaaS platform, working across the full development lifecycle from design to deployment.
+- Engineered a centralized MQTT-based real-time alert notification system delivering 1,000+ cross-application alerts per week, improving inter-service communication reliability.
+- Designed a standardized Data Transfer Object (DTO) architecture across 30+ backend API routes, eliminating response inconsistencies and reducing client-side integration defects.
+- Tech: React, Node.js, TypeScript, MQTT, REST APIs, MongoDB
+
+### Frontend Developer Intern — Anuin Techlogix (July 2024 – September 2024)
+- Developed a dynamic order and reservation management dashboard enabling staff to process 100+ daily orders with real-time state updates.
+- Integrated RESTful APIs for menu and order workflows, delivering a consistent cross-platform experience across mobile and desktop clients.
+- Applied performance optimization techniques including code-splitting, lazy loading, and state management improvements that reduced page load times by 25%.
+- Tech: React, Redux, JavaScript, REST APIs, CSS
+
+## Projects
+
+### CineEncode (2026)
+A distributed, content-aware video transcoding platform using Node.js (TypeScript), Express, and Sequelize ORM. Features automated video splitting with FFmpeg, Groq AI (Llama-3-70B) integration for scene analysis and dynamic CRF prediction (40% compression improvement), BullMQ + Redis + Kafka async task system, and a React/TypeScript monitoring dashboard.
+- GitHub: https://github.com/VIBHORE-LAB/cine-encode
+
+### CSV SQL Parser (2025)
+A Terminal User Interface (TUI) based CSV to SQL compiler and query executor in Python. Features a custom lexer, parser, AST, query planner, and executor. Interactive terminal interface with syntax highlighting, schema view, autocompletion, and responsive data tables.
+- GitHub: https://github.com/VIBHORE-LAB/csv-sql-parser
+
+### Email RAG Pipeline (2025)
+A full-stack Retrieval-Augmented Generation (RAG) pipeline for real-time email classification and AI-assisted responses with automated Slack notifications. Built with Node.js (TypeScript), GraphQL, MongoDB, Elasticsearch, Qdrant, Docker, and React.
+- GitHub: https://github.com/VIBHORE-LAB/reachinbox-backend
+- Live: https://elaborate-dusk-b92b23.netlify.app/
+
+### Stratify (2025)
+Full-stack trading strategy backtester with C++ computation engine, React (TypeScript), Node.js, Express, PostgreSQL, Socket.io, and JWT authentication. Supports Bollinger Bands, Mean Reversion, Momentum, and more strategies with equity curve visualizations and real-time trade updates.
+- GitHub: https://github.com/VIBHORE-LAB/stratify-backend
+- Live: https://stratifyy.netlify.app/
+
+### Odeon (2025)
+Full-stack Spotify analytics platform using React (TypeScript), Node.js, Apollo GraphQL, and LowDB. Features personalized dashboards with top tracks, artists, genres, mood metrics, and real-time listening trends.
+- GitHub: https://github.com/VIBHORE-LAB/Odeon-Server
+- Live: https://odeon-frontend.netlify.app/
+
+### Buyora (2025)
+Full-stack e-commerce platform using Flask and React with Redux-Saga, supporting customer and seller roles with product listings, cart management, order processing, and role-based dashboards.
+- GitHub: https://github.com/VIBHORE-LAB/Buyora-Server
+- Live: https://buyora.netlify.app/
+
+### Appointment Manager (2025)
+MERN stack appointment management platform with secure role-based authentication via Passport.js, JWT, bcrypt.js, and OAuth.
+- GitHub: https://github.com/VIBHORE-LAB/Appointment-Manager
+
+### WebAnalyzer.AI (2025)
+Browser extension that uses AI to inspect and summarize underlying website technologies including tech stack, API calls, and frameworks. Powered by Cohere.
+- GitHub: https://github.com/VIBHORE-LAB/WebAnalyzer.Ai
+
+### AltDee (2025)
+Chrome Extension to convert light mode websites into dark themed websites to reduce eye strain.
+- GitHub: https://github.com/VIBHORE-LAB/altDee
